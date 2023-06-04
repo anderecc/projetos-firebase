@@ -6,14 +6,19 @@
     gap: 1rem
     padding: 1rem
     font-size: 1.2rem
+    flex-wrap: wrap
     input
         @include input
-    button
-        @include button
-        font-size: 1.2rem
-    .btn_search
-        background-color: $bg-blue
-        color: $text-white
-    .btn_clear
-        color: $text-white
-        background-color: $bg-red
+    div
+        @include flex
+        gap: 1rem
+
+        button
+            @include button
+            font-size: 1.2rem
+        .btn_search
+            background-color: $bg-blue
+            color: $text-white
+        .btn_clear
+            color: $text-white
+            background-color: $bg-red

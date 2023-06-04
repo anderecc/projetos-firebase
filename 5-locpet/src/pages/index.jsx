@@ -70,18 +70,20 @@ export default function Home() {
                             value={valueSearch}
                             onChange={handleChange}
                         />
-                        <button
-                            onClick={handleSubmit}
-                            className={styles.btn_search}
-                        >
-                            <i className="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                        <button
-                            onClick={handleClear}
-                            className={styles.btn_clear}
-                        >
-                            <i className="fa-solid fa-xmark"></i>
-                        </button>
+                        <div>
+                            <button
+                                onClick={handleSubmit}
+                                className={styles.btn_search}
+                            >
+                                <i className="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <button
+                                onClick={handleClear}
+                                className={styles.btn_clear}
+                            >
+                                <i className="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
                     </section>
                     <section>
                         {search ? (
