@@ -1,0 +1,35 @@
+@import '../_mixins'
+@import '../_variables'
+
+.container
+    .btns_container
+        @include to-flex($align: center, $content: flex-start)
+
+        gap: 1rem
+        .btn_submit
+            @include button
+            background-color: $bg-green
+            color: $text-white
+            margin-top: 1rem
+            padding: .3rem .8rem
+            font-size: 1rem
+        .btn_cancel
+            @include button
+            color: $text-white
+            margin-top: 1rem
+            padding: .3rem .8rem
+            font-size: 1rem
+            background-color: $text-red
+
+    .content
+        gap: 1rem
+        @include desktop
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+
+        div
+            display: flex
+            flex-direction: column
+            gap: .5rem
+            input
+                @include input

@@ -1,0 +1,33 @@
+@import '../_mixins'
+@import '../_variables'
+
+.map
+    @include flex
+
+    padding: 2rem
+    position: fixed
+    background-color: rgba(0, 0, 0, .8)
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    @include desktop
+        padding: 5rem
+
+.btn_close
+    @include button
+    @include flex
+    width: 50px
+    height: 50px
+    font-size: 2.5rem
+    color: $text-red
+    position: absolute
+    right: 5%
+    top: 5%
+    z-index: 10
+    background-color: rgba(0, 0, 0, .5)
+    border-radius: 50%
+    &:hover
+        background-color: darken($text-red, 10%)
+        color: black
+    @include desktop

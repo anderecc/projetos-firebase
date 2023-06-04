@@ -1,0 +1,14 @@
+@import './_mixins'
+@import './_variables'
+
+.container
+    @include flex
+    height: 50px
+    background-color: $bg-primary
+    color: $text-white
+    a
+        @include transition
+        color: $text-link
+        font-weight: bold
+        &:hover
+            color: $text-link-hover

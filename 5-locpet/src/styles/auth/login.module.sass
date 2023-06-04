@@ -1,0 +1,26 @@
+@import '../_mixins'
+@import '../_variables'
+
+.container
+    @include flex
+    flex-direction: column
+    gap: 2rem
+    h3
+        font-size: 2rem
+        color: $text-primary
+    form
+        display: flex
+        flex-direction: column
+        gap: 1rem
+        input
+            @include input
+        .btn_submit
+            @include button
+            background-color: $bg-green
+            color: $text-white
+    p
+        a
+            @include transition
+            color: $text-link
+            &:hover
+                color: $text-link-hover

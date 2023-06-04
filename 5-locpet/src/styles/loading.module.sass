@@ -1,0 +1,22 @@
+@import './_mixins'
+
+.container
+    @include flex
+    background-color: rgba(0, 0, 0, .4)
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    .spinner
+        width: 85px
+        height: 85px
+        border-radius: 50%
+        border: 9px solid
+        border-color: #dbdcef
+        border-right-color: #2224a3
+        animation: spinner-d3wgkg 1s infinite linear
+
+@keyframes spinner-d3wgkg
+    to
+        transform: rotate(1turn)

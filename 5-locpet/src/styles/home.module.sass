@@ -1,0 +1,19 @@
+@import './_mixins'
+@import './_variables'
+
+.search_container
+    @include flex
+    gap: 1rem
+    padding: 1rem
+    font-size: 1.2rem
+    input
+        @include input
+    button
+        @include button
+        font-size: 1.2rem
+    .btn_search
+        background-color: $bg-blue
+        color: $text-white
+    .btn_clear
+        color: $text-white
+        background-color: $bg-red

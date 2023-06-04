@@ -1,0 +1,45 @@
+@import '../_mixins'
+@import '../_variables'
+
+.container
+    display: grid
+    border-bottom: 1px solid black
+    padding: 1rem
+    @include desktop
+        grid-template-columns: repeat(2, 1fr)
+    p
+        display: flex
+        align-items: center
+        gap: 1rem
+        min-height: 35px
+        flex-wrap: wrap
+    .actions_container
+        display: flex
+        gap: 1rem
+        .btn_edit, .btn_delete, .btn_confirm_delete
+            @include button
+            color: black
+
+        .btn_edit
+            background-color: $bg-blue
+        .btn_delete
+            background-color: $bg_red
+        .btn_confirm_delete
+            background-color: $bg-darkRed
+            color: white
+.bg_white
+    background-color: $bg-light
+
+.bg_gray
+    background-color: rgba(0, 0, 0, .1)
+
+.btn_open_map
+    @include button
+    color: $text-white
+    background-color: $bg-primary
+    &:hover
+        color: $text-green
+
+.link_wpp
+    color: #25D366
+    font-size: 1.2rem

@@ -1,0 +1,52 @@
+@import './_variables'
+
+@mixin transition
+    transition: all .3s
+
+@mixin desktop
+    @media ( min-width: 720px )
+        @content
+
+@mixin button
+    @include transition
+    border: none
+    padding: 5px 10px
+    border-radius: 5px
+    background-color: transparent
+    font-size: 1rem
+    cursor: pointer
+    &:active
+        transform: scale(.96)
+    &:hover
+        box-shadow: inset 5px 5px 50px rgba(0, 0, 0, .4)
+    &:disabled
+        background-color: $bg-dark
+
+@mixin flex
+    display: flex
+    align-items: center
+    justify-content: center
+
+@mixin flex-items
+    display: flex
+    align-items: center
+
+@mixin flex-content
+    display: flex
+    justify-content: center
+
+@mixin to-flex($align, $content)
+    display: flex
+    align-items: $align
+    justify-content: $content
+
+@mixin input
+    @include transition
+    outline: none
+    border-radius: 5px
+    border: 1px solid $bg-primary
+    font-size: 1rem
+    background-color: transparent
+    padding: 5px 10px
+    &:focus
+        background-color: $dark-transparent

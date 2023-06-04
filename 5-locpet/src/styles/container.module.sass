@@ -1,0 +1,26 @@
+@import './_mixins'
+@import './_variables'
+
+.content
+    padding: 1rem
+    min-height: calc( 100vh - 100px )
+    position: relative
+    background-color: $bg-light
+
+.home
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    @include desktop
+        padding: 3rem
+
+.auth
+    @include flex
+    flex-direction: column
+
+.register
+    display: flex
+    flex-direction: column
+    gap: 1rem
+    @include desktop
+        padding: 1rem 3rem
