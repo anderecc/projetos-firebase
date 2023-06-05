@@ -32,7 +32,7 @@ const Editar = () => {
 
     return (
         <>
-            <HeadApp />
+            <HeadApp title={`Editar cliente - ${client.nameClient}`} />
             <Header />
             {context.loading ? (
                 <Container>

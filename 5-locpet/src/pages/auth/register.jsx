@@ -33,7 +33,7 @@ const Register = () => {
 
     return (
         <>
-            <HeadApp title="Entre na sua conta ou faça um cadastro." />
+            <HeadApp title="Faça um cadastro ou entre na sua conta." />
             <Header />
             {context.loading ? (
                 <Container>
