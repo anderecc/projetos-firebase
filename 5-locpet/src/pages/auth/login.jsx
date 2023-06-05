@@ -78,9 +78,8 @@ const Login = () => {
                         </form>
                         <p className="text-danger">{messages.errors.login}</p>
                         <p>
-                            Não tem uma conta?{' '}
                             <Link href="/auth/register">Cadastrar</Link> uma
-                            agora mesmo.
+                            nova conta.
                         </p>
                     </section>
                 </Container>

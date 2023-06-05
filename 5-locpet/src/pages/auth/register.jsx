@@ -87,9 +87,8 @@ const Register = () => {
                             />
                         </form>
                         <p>
-                            Já tem uma conta?{' '}
                             <Link href="/auth/login">Entrar </Link>
-                            nela agora mesmo.
+                            em uma conta.
                         </p>
                     </section>
                 </Container>
